@@ -61,7 +61,7 @@ box-sizing: border-box;
 
 .container {
   max-width: 1366px;
-  margin: 0 auto 134px;
+  margin: 0 auto;
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
   background-repeat: no-repeat;
   background-position:top right;

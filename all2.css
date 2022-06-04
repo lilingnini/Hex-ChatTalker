@@ -55,7 +55,7 @@ table {
 
 .container{
     max-width: 1366px;
-    margin: 0 auto 134px;
+    margin: 0 auto;
     position: relative;
 }
 .banner_img{
