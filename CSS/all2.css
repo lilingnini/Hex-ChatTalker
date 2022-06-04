@@ -1,0 +1,381 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+}
+
+.container{
+    max-width: 1366px;
+    margin: 0 auto 134px;
+    position: relative;
+}
+.banner_img{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    z-index: -1;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media(max-width:768px){
+
+    .banner_img{
+        display:none;
+    }
+  }
+/* header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 20px;
+    margin-bottom: 92px;
+}
+.header img{
+    width: 218px;
+    height: auto;
+}
+.header_button{
+    display: block;
+    padding: 8px 32px;
+    text-decoration: none;
+    background: #FF5D50;
+    color:#fff;
+    border-radius: 22px;
+    height: auto;
+}
+
+@media(max-width:768px){
+    .header{
+      margin-bottom: 0px;
+      border-bottom: 2px solid #FFD153 ;
+    }
+    .header img{
+      width: 130px; 
+    }
+  }
+
+/* banner */
+
+.banner{
+    padding: 92px 0 220px 0;
+    margin-bottom: 100px;
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+@media(max-width:768px){
+    .banner{
+        padding: 48px 163px 401px 20px;
+        margin-bottom: 60px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg);
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+    h1{
+        font-size: 32px;
+    }
+  }
+
+/* content */
+
+.content{
+    margin-bottom: 100px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.content_icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: -16px;
+    margin-bottom: 48px;
+}
+
+.content_icon a{
+    margin-right: 16px;
+    display: block;  
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px 32px;
+    background: #fff;
+    color:#56C4C5;
+    border-radius: 27px;
+    border: 1px solid #56C4C5;
+}
+.content_icon a:hover{
+    background: #56C4C5;
+    color:#fff;
+}
+
+@media(max-width:768px){
+    .content{
+        margin-bottom: 60px;
+        margin-right: -2px;
+        margin-left: -2px;
+    }
+    h2{
+        font-size: 28px;
+        padding: 0 20px;
+    }
+    .content_icon {
+        justify-content: space-around; 
+        }
+    .content_icon a{
+    font-size: 12px;
+    padding: 16px 8px;
+    margin-right: 1px;
+    margin-left: 1px;
+    }
+}
+
+
+.content_card_program{
+    display: flex;
+    justify-content: space-between;
+    margin-right: -16px;
+}
+.content_card{
+    width: 50%;   
+    text-align: center;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-right: 16px;
+}
+
+.content_card_title{
+    font-size: 24px;
+    padding: 16px 0;
+    border-bottom: 1px solid #DDDDDD;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+.content_card_info{
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+@media(max-width:768px){
+    .content_card_program{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_card{
+        width: 100%; 
+        margin-bottom: 24px;
+        }
+    .content_card_info{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+.content_card_formula{
+    display: flex;
+    padding: 0 29px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.content_card_formula_member,.content_card_formula_fee{
+    width: 170px;
+    padding: 24px 32px;
+    background: #F5F5F5;
+    border-radius: 12px;
+}
+.content_card_formula_member_title,.content_card_formula_fee_title{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.content_card_formula_member_quantity{
+    font-size: 32px;
+    color: #56C4C5;
+}
+.content_card_formula_member_quantity sub,.content_card_formula_fee_quantity sub{
+    font-size: 12px;
+}
+.content_card_formula_equal{
+    font-size: 29px;
+    width: 54px;
+}
+
+.content_card_formula_fee_quantity{
+    font-size: 32px;
+}
+
+
+@media(max-width:768px){
+    .content_card_formula{
+        padding: 0 16px;
+    }
+    .content_card_formula_member_title,.content_card_formula_fee_title{
+        font-size: 12px;
+    }
+    .content_card_formula_member_quantity,.content_card_formula_fee_quantity{
+        font-size: 28px;
+    }
+    .content_card_formula_equal{
+        font-size: 24px;
+    }
+    .content_card_list{
+        padding-left: 16px;
+        font-size: 14px;
+        } 
+
+}
+
+
+.content_card_list{
+text-align: left;
+padding-left: 29px;
+line-height: 2;
+margin-bottom: 32px;
+}
+.content_card_list img{
+padding-right: 12px;
+}
+.content_card_icon{
+    margin-bottom: 32px;
+}
+.content_card_icon a{
+    text-decoration: none;
+    padding: 12px 32px;
+    background: #56C4C5;
+    color:#fff;
+    border-radius: 27px;
+    border: 1px solid #56C4C5;
+
+}
+.content_card_icon a:hover{
+    background: #fff;
+    color:#56C4C5;
+}
+
+
+
+
+/* footer */
+
+@media(max-width:768px){
+ h3{
+     font-size: 28px;
+ }
+ .footer p,.footer_q3_a {
+    font-size: 16px;
+ }
+}
+
+.footer p{
+    font-size: 18px;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;   
+}
+
+.footer_q1,.footer_q2{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.footer_q3{
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-bottom: 100px;
+}
+.footer_q3_q{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #56C4C5;
+}
+.footer_q3_a{
+    color: #747474;
+    padding: 0 32px 32px 32px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+.copyright{
+    max-width: 1366px;
+    text-align: center;
+    padding: 16px;
+    background: #F5F5F5;
+}
