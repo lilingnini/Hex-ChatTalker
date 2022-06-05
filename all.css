@@ -82,7 +82,7 @@ box-sizing: border-box;
 
 .header {
   display: flex;
-  padding: 24px 139px;
+  padding: 24px 0;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 54px;
