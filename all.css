@@ -58,10 +58,10 @@ box-sizing: border-box;
 }
 
 .index_body{
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
   background-repeat: no-repeat;
-  background-position:top right;
-  background-size: 52%;
+  background-position:top right,-16% 16%;
+  background-size: 52%,20%;
 }
 
 .container {
