@@ -57,16 +57,16 @@ box-sizing: border-box;
 /* outline: 1px solid black; */
 }
 
-
-
-.container {
-  max-width: 1366px;
-  margin: 0 auto;
+.index_body{
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
   background-repeat: no-repeat;
   background-position:top right;
   background-size: 52%;
+}
 
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 @media(max-width:768px){
@@ -82,7 +82,7 @@ box-sizing: border-box;
 
 .header {
   display: flex;
-  padding: 24px 0 24px 0;
+  padding: 24px 139px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 54px;
