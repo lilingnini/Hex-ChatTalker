@@ -70,6 +70,9 @@ box-sizing: border-box;
 }
 
 @media(max-width:768px){
+  .index_body{
+    background-image: none;
+  }
   .container{
     background-image:none; 
     padding: 0; 
@@ -564,7 +567,6 @@ h6{
   .home_footer{
   background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
   flex-wrap: wrap;
-  /* align-items: center; */
   }
 h6{
     font-size: 24px;
