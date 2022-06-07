@@ -54,7 +54,7 @@ table {
 
 *, *::before, *::after {
 box-sizing: border-box;
-outline: 1px solid black;
+/* outline: 1px solid black; */
 }
 
 .index_body{
@@ -84,6 +84,7 @@ outline: 1px solid black;
 /* header */
 
 .header {
+  max-width: 1440px;
   display: flex;
   padding: 24px 0;
   justify-content: space-between;
@@ -412,9 +413,11 @@ height: 52px;
     margin-bottom: -24px;
   }
   .content_funtion_card{
-    width: 100%;
+    width: 61%;
+    margin-right: 0;
     margin-bottom: 24px;
   }
+
 }
 
 
@@ -480,11 +483,10 @@ h5{
   }
   .content_user_feedback{
     flex-wrap: wrap;
-    padding-right: 20px;
-    padding-left: 20px;
+    justify-content: center;
   }
   .content_user_feedback_card{
-    width: 100%;
+    width: 89%;
     margin-bottom: 40px;
   }
   .content_user_feedback_card .user{
@@ -527,7 +529,7 @@ margin-bottom: 100px;
 /* home_footer */
 
 .home_footer{
-  max-width: 1088px;
+  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
@@ -548,7 +550,6 @@ h6{
   color:#fff;
   background: #56C4C5;
   border-radius: 22px;
-  margin-bottom: 100px;
 }
 
 .home_footer p{
@@ -561,13 +562,12 @@ h6{
   .home_footer{
   background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
   flex-wrap: wrap;
+  background-position: center;
+  width: 100%;
   }
 h6{
     font-size: 24px;
-    padding: 293px 0 24px 0;
-  }
-  .home_footer a{
-    margin-bottom: 60px;
+    padding: 293px 0 24px 0; 
   }
   }
 
