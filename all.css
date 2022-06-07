@@ -332,11 +332,7 @@ h4{
 .content_funtion_title{
   width: 58%;
 }
-h4{
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+
 .content_funtion_title p{
   font-size: 18px;
   margin-bottom: 36px;
@@ -400,27 +396,24 @@ height: 52px;
   }
   .content_funtion_title{
     width: 100%;
-  }
-  h4{
-    font-size: 28px;
-    margin-bottom: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .content_funtion_title p{
     font-size: 16px;
     text-align: center;
     margin-bottom: 16px;
   }
-
   .content_funtion_title a{
     margin-bottom: 32px;
   }
   .content_funtion_point{
-    width: 61%;
     justify-content: center;
     margin-bottom: -24px;
   }
   .content_funtion_card{
-    margin: 0px 0px 24px 0px;
+    width: 100%;
+    margin-bottom: 24px;
   }
 }
 
@@ -487,6 +480,8 @@ h5{
   }
   .content_user_feedback{
     flex-wrap: wrap;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .content_user_feedback_card{
     width: 100%;
@@ -540,7 +535,7 @@ margin-bottom: 100px;
   background-size: contain;
 
 }
-h4{
+h6{
   font-size: 32px;
   font-weight: bold;
   text-align: center;
@@ -567,7 +562,7 @@ h4{
   background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
   flex-wrap: wrap;
   }
-h4{
+h6{
     font-size: 24px;
     padding: 293px 0 24px 0;
   }
