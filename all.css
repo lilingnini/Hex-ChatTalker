@@ -109,6 +109,7 @@ box-sizing: border-box;
 }
 
 .header a:hover{
+  border: 1px solid #FF5D50;
   color:#FF5D50;
   background: #fff;
 }
