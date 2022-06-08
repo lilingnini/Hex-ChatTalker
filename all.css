@@ -75,7 +75,8 @@ box-sizing: border-box;
   }
   .container{
     background-image:none; 
-    padding: 0; 
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 
@@ -96,6 +97,7 @@ box-sizing: border-box;
   width: 218px;;
   height: auto;
 }
+
 .header_button{
   display: block;
   padding: 8px 32px;
@@ -105,6 +107,14 @@ box-sizing: border-box;
   border-radius: 22px;
   height: auto;
 }
+
+.header a:hover{
+  color:#FF5D50;
+  background: #fff;
+}
+
+
+
 
 @media(max-width:768px){
   .header{
@@ -347,6 +357,11 @@ h4{
   background: #56C4C5;
   border-radius: 27px;
 }
+.content_funtion_title a:hover{
+  color:#56C4C5;
+  background: #fff;
+  border: 1px solid #56C4C5;
+}
 
 .content_funtion_point{
   display: flex;
@@ -551,6 +566,12 @@ h6{
   background: #56C4C5;
   border-radius: 22px;
 }
+.home_footer a:hover{
+  color:#56C4C5;
+  background: #fff;
+  border: 1px solid #56C4C5;
+}
+
 
 .home_footer p{
   background: #F5F5F5;
@@ -562,7 +583,8 @@ h6{
   .home_footer{
   background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
   flex-wrap: wrap;
-  background-position: center;
+  background-position: top center;
+  background-size: contain;
   }
 h6{
     font-size: 24px;
