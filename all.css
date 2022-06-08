@@ -85,7 +85,7 @@ box-sizing: border-box;
 /* header */
 
 .header {
-  max-width: 1440px;
+  max-width: 1088px;
   display: flex;
   padding: 24px 0;
   justify-content: space-between;
@@ -544,7 +544,7 @@ margin-bottom: 100px;
 /* home_footer */
 
 .home_footer{
-  max-width: 1440px;
+  max-width: 1088px;
   margin: 0 auto;
   text-align: center;
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
