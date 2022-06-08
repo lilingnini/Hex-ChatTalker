@@ -85,7 +85,6 @@ box-sizing: border-box;
 /* header */
 
 .header {
-  max-width: 1088px;
   display: flex;
   padding: 24px 0;
   justify-content: space-between;
@@ -109,7 +108,6 @@ box-sizing: border-box;
 }
 
 .header a:hover{
-  border: 1px solid #FF5D50;
   color:#FF5D50;
   background: #fff;
 }
@@ -545,7 +543,6 @@ margin-bottom: 100px;
 /* home_footer */
 
 .home_footer{
-  max-width: 1088px;
   margin: 0 auto;
   text-align: center;
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
