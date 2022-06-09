@@ -54,9 +54,11 @@ table {
 }
 
 .container{
-    max-width: 1366px;
-    margin: 0 auto;
+    max-width: 1088px;
+    margin: 0 auto;  
     position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .banner_img{
     position: absolute;
@@ -103,6 +105,11 @@ table {
     border-radius: 22px;
     height: auto;
 }
+.header a:hover{
+    color:#FF5D50;
+    background: #fff;
+  }
+  
 
 @media(max-width:768px){
     .header{
@@ -127,7 +134,7 @@ h1{
 }
 @media(max-width:768px){
     .banner{
-        padding: 48px 163px 401px 20px;
+        /* padding: 48px 163px 401px 20px; */
         margin-bottom: 60px;
         background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg);
         background-repeat: no-repeat;
@@ -155,7 +162,6 @@ h2{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-right: -16px;
     margin-bottom: 48px;
 }
 
@@ -178,8 +184,6 @@ h2{
 @media(max-width:768px){
     .content{
         margin-bottom: 60px;
-        margin-right: -2px;
-        margin-left: -2px;
     }
     h2{
         font-size: 28px;
@@ -200,14 +204,13 @@ h2{
 .content_card_program{
     display: flex;
     justify-content: center;
-    margin-right: -16px;
 }
 .content_card{
-    width: 33%;   
+    width: 42%;   
     text-align: center;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
-    margin-right: 16px;
+    margin-right: 21px;
 }
 
 .content_card_title{
@@ -238,18 +241,15 @@ h2{
 }
 
 
-
-
-
 .content_card_formula{
     display: flex;
-    padding: 0 29px;
+    padding: 0 24px;
     justify-content: center;
     align-items: center;
     margin-bottom: 32px;
 }
 .content_card_formula_member,.content_card_formula_fee{
-    width: 170px;
+    width: 169px;
     padding: 24px 32px;
     background: #F5F5F5;
     border-radius: 12px;
@@ -299,6 +299,7 @@ h2{
 .content_card_list{
 text-align: left;
 padding-left: 29px;
+padding-right: 40px;
 line-height: 2;
 margin-bottom: 32px;
 }
@@ -327,13 +328,12 @@ padding-right: 12px;
 
 /* footer */
 
-@media(max-width:768px){
- h3{
-     font-size: 28px;
- }
- .footer p,.footer_q3_a {
-    font-size: 16px;
- }
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer p{
@@ -348,17 +348,21 @@ h3{
 }
 
 .footer_q1,.footer_q2{
+    width: 91%;
+    height: 58px;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
+    padding-right: 32px;
+    padding-left: 32px;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
     margin-bottom: 16px;
 }
 
 .footer_q3{
+    width: 91%;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
     margin-bottom: 100px;
@@ -368,6 +372,8 @@ h3{
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
+    padding-right: 32px;
+    padding-left: 32px; 
     margin-bottom: 8px;
     font-size: 18px;
     font-weight: bold;
@@ -380,9 +386,16 @@ h3{
     font-size: 16px;
 }
 
+@media(max-width:768px){
+    h3{
+        font-size: 28px;
+    }
+    .footer p,.footer_q3_a {
+       font-size: 16px;
+    }
+   }
 
 .copyright{
-    max-width: 1366px;
     text-align: center;
     padding: 16px;
     background: #F5F5F5;
